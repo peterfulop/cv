@@ -5,7 +5,7 @@ const data = {
   birth: new Date("1993.08.17").toLocaleDateString(),
   country: "Hungary",
   city: "Körmend",
-  avatar: "IMG_4232.jpg",
+  avatar: "avatar.png",
   education: {
     title: "Education",
     educations: [
