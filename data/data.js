@@ -2,74 +2,110 @@ const data = {
   name: "Fülöp Péter",
   level: "junior",
   place: "szoftverfejlesztő",
-  birth: new Date("1993.08.17"),
+  birth: new Date("1993.08.17").toLocaleDateString(),
   country: "Hungary",
   city: "Körmend",
-  avatar: "./src/img/avatar.png",
-  education: [
-    {
-      school: "asd",
-      technical: "sadasdsdadaw awdaw asd",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur exercitationem, animi et commodi ex nisi soluta doloremque nam accusamus unde!",
-    },
+  avatar: "IMG_4232.jpg",
+  education: {
+    title: "Education",
+    educations: [
+      {
+        school: "asd",
+        technical: "sadasdsdadaw awdaw asd",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur exercitationem, animi et commodi ex nisi soluta doloremque nam accusamus unde!",
+      },
 
-    {
-      school: "bdf",
-      technical: "asdasd asdwda asd",
-      text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur exercitationem, animi et commodi ex nisi soluta doloremque nam accusamus unde!",
-    },
-  ],
-  contacts: [
-    {
-      title: "email",
-      data: "mrpeterfulop@gmail.com",
-      icon: "fa-envelope",
-    },
-    {
-      title: "phone",
-      data: "+36306561900",
-      icon: "fa-phone-alt",
-    },
-  ],
-  expertise: ["mySQL", "Javscript", "Agilite", "NodeJS", "React", "TeamWork"],
-  hobbies: [
-    {
-      title: "coding",
-      icon: "fa-code",
-    },
-    {
-      title: "photography",
-      icon: "fa-camera-retro",
-    },
-    {
-      title: "swimming",
-      icon: "fa-swimmer",
-    },
-    {
-      title: "hiking",
-      icon: "fa-hiking",
-    },
-    {
-      title: "cycling",
-      icon: "fa-bicycle",
-    },
-    {
-      title: "pizza",
-      icon: "fa-pizza-slice",
-    },
-  ],
-  social: [
-    {
-      title: "facebook",
-      icon: "fa-facebook",
-      href: "/facebook",
-    },
-    {
-      title: "github",
-      icon: "fa-github",
-      href: "/github",
-    },
-  ],
+      {
+        school: "bdf",
+        technical: "asdasd asdwda asd",
+        text: "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur exercitationem, animi et commodi ex nisi soluta doloremque nam accusamus unde!",
+      },
+    ],
+  },
+  expertise: {
+    title: "Expertise",
+    expertises: [
+      "mySQL",
+      "C#",
+      "Javscript",
+      "Agilite",
+      "NodeJS",
+      "React",
+      "TeamWork",
+    ],
+  },
+  hobby: {
+    title: "Hobbies",
+    hobbies: [
+      {
+        title: "coding",
+        icon: "fas fa-code",
+      },
+      {
+        title: "photography",
+        icon: "fas fa-camera-retro",
+      },
+      {
+        title: "swimming",
+        icon: "fas fa-swimmer",
+      },
+      {
+        title: "hiking",
+        icon: "fas fa-hiking",
+      },
+      {
+        title: "cycling",
+        icon: "fas fa-bicycle",
+      },
+      {
+        title: "pizza",
+        icon: "fas fa-pizza-slice",
+      },
+    ],
+  },
+  contact: {
+    title: "Contacts",
+    contacts: [
+      {
+        title: "email",
+        data: "mrpeterfulop@gmail.com",
+        icon: "fas fa-envelope",
+        href: "mailto: mrpeterfulop@gmail.com",
+      },
+      {
+        title: "phone",
+        data: "+36306561900",
+        icon: "fas fa-phone-alt",
+        href: "tel:+36306561900",
+      },
+      {
+        title: "location",
+        data: "Hungary, Körmend",
+        icon: "fas fa-map-marker-alt",
+        href: "https://goo.gl/maps/nb1VupvEym9PHs6T9",
+      },
+    ],
+  },
+  social: {
+    title: "Social",
+    socials: [
+      {
+        title: "facebook",
+        icon: "fab fa-facebook",
+        link: "https://www.facebook.com/fulop.peter.10",
+      },
+      {
+        title: "github",
+        icon: "fab fa-github",
+        link: "https://github.com/peterfulop",
+      },
+      {
+        title: "linkedin",
+        icon: "fab fa-linkedin",
+        link: "https://www.linkedin.com/in/peter-fulop",
+      },
+    ],
+  },
   content: {
     about: {
       title: "About Me",
@@ -80,32 +116,42 @@ const data = {
       skills: [
         {
           name: "HTML",
-          force: 80,
+          force: 70,
           icon: "fab fa-html5",
         },
         {
           name: "JavaScript",
-          force: 70,
+          force: 50,
           icon: "fab fa-js-square",
         },
         {
+          name: "Bootstrap",
+          force: 40,
+          icon: "fab fa-bootstrap",
+        },
+        {
           name: "CSS",
-          force: 60,
-          icon: "fab fa-css3-alt ",
+          force: 35,
+          icon: "fab fa-css3-alt",
+        },
+        {
+          name: "C#",
+          force: 40,
+          icon: "fab fa-windows",
         },
         {
           name: "NodeJS",
-          force: 40,
+          force: 30,
           icon: "fab fa-node-js",
         },
         {
           name: "React",
-          force: 10,
+          force: 20,
           icon: "fab fa-react",
         },
         {
           name: "PHP",
-          force: 5,
+          force: 10,
           icon: "fab fa-php",
         },
       ],

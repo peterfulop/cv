@@ -53,7 +53,9 @@ class SkillItem extends React.Component {
             <div className="progress">
               <div
                 className="progress-bar bg-cadet"
-                style={{ width: skill.force + "%" }}
+                style={{
+                  width: skill.force + "%",
+                }}
               ></div>
             </div>
           </div>
@@ -142,23 +144,6 @@ class AchivementItem extends React.Component {
   }
 }
 
-class ContentSection extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    let content = this.props.content;
-    return (
-      <div className="content-section p-3 p-md-5">
-        <AboutMeSection about={content.about} />
-        <SkillSection skill={content.skill} />
-        <ExperienceSection exp={content.experience} />
-        <AchivementSection ach={content.achivement} />
-      </div>
-    );
-  }
-}
-
 class ContentHeading extends React.Component {
   constructor(props) {
     super(props);
@@ -172,15 +157,238 @@ class ContentHeading extends React.Component {
   }
 }
 
+class ContentSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    let content = this.props.content;
+    return (
+      <div className="content-section p-3 p-md-5 me-0 me-md-3">
+        <AboutMeSection about={content.about} />
+        <SkillSection skill={content.skill} />
+        <ExperienceSection exp={content.experience} />
+        <AchivementSection ach={content.achivement} />
+      </div>
+    );
+  }
+}
+
+class ProfileSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const path = `../src/img/${this.props.profile.avatar}`;
+    return (
+      <div className="sidebar mx-2">
+        <div className="avatar-box d-flex justify-content-center">
+          <img id="avatar-img" src={path} alt="avatar" />
+        </div>
+        <div className="d-flex justify-content-center p-2 bg-secondary">
+          <div className="d-flex justify-content-center align-items-center me-2">
+            <i className="fas fa-birthday-cake"></i>
+          </div>
+          <div className="d-flex justify-content-center align-items-center">
+            <p className="item-text__heading">{this.props.profile.birth}</p>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
+
+class EducationSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const educations = this.props.education.educations;
+    return (
+      <div className="sidebar mx-2">
+        <SidebarHeading title={this.props.education.title} />
+        {educations.map((edu) => {
+          return <EducationItem edu={edu} />;
+        })}
+      </div>
+    );
+  }
+}
+
+class EducationItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const edu = this.props.edu;
+    return (
+      <div className="sidebar__education">
+        <div className="sidebar__item sidebar-education d-block justify-content-left p-3 my-2">
+          <p className="item-text__heading">{edu.school}</p>
+          <p className="item-text">{edu.technical}</p>
+          <p className="item-text__small">{edu.text}</p>
+        </div>
+      </div>
+    );
+  }
+}
+
+class ContactSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const contacts = this.props.contact.contacts;
+    return (
+      <div className="sidebar mx-2">
+        <SidebarHeading title={this.props.contact.title} />
+        {contacts.map((con) => {
+          return <ContactItem con={con} />;
+        })}
+      </div>
+    );
+  }
+}
+
+class ContactItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const con = this.props.con;
+    return (
+      <a href={con.href} className="sidebar__contact">
+        <div className="sidebar__item sidebar-contact d-flex justify-content-left p-3">
+          <div className="item-icon d-flex justify-content-center align-items-center me-2">
+            <i className={con.icon}></i>
+          </div>
+          <div className="item-text d-flex flex-column justify-content-center align-content-center">
+            <p className="item-text__heading">{con.title}</p>
+            <p className="item-text__link contact_data">{con.data}</p>
+          </div>
+        </div>
+      </a>
+    );
+  }
+}
+
+class ExpertiseSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const expertises = this.props.expertise.expertises;
+    return (
+      <div className="sidebar mx-2">
+        <SidebarHeading title={this.props.expertise.title} />
+        <ul class="sidebar__item pt-2">
+          {expertises.map((exp) => {
+            return (
+              <li class="item-text__heading expertise-item py-1">{exp}</li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  }
+}
+
+class HobbySection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const hobbies = this.props.hobby.hobbies;
+    return (
+      <div className="sidebar mx-2">
+        <SidebarHeading title={this.props.hobby.title} />
+        <div className="sidebar__item d-flex flex-wrap justify-content-center py-3 my-2">
+          {hobbies.map((hobby) => {
+            return (
+              <div className="hobby-box" title={hobby.title}>
+                <i className={hobby.icon}></i>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    );
+  }
+}
+
+class SidebarHeading extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+      <div className="sidebar__item sidebar-header d-flex justify-content-left pt-2">
+        <h2 class="text-white">{this.props.title}</h2>
+      </div>
+    );
+  }
+}
+
+class SocialSection extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const socials = this.props.social.socials;
+    return (
+      <div className="sidebar mx-2">
+        <SidebarHeading title={this.props.social.title} />
+        {socials.map((soc) => {
+          return <SocialItem soc={soc} />;
+        })}
+      </div>
+    );
+  }
+}
+
+class SocialItem extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    const soc = this.props.soc;
+    return (
+      <a href={soc.link} target="blank" className="sidebar__social">
+        <div className="sidebar__item sidebar-social d-flex justify-content-left p-3">
+          <div className="item-icon d-flex justify-content-center align-items-center me-2">
+            <i className={soc.icon}></i>
+          </div>
+          <div className="item-text d-flex flex-column justify-content-center align-content-center">
+            <p className="item-text__heading">{soc.title}</p>
+            <p className="item-text__link">
+              /{soc.link.split("/")[soc.link.split("/").length - 1]}
+            </p>
+          </div>
+        </div>
+      </a>
+    );
+  }
+}
+
 class SidebarSection extends React.Component {
   constructor(props) {
     super(props);
   }
   render() {
-    return <div class="sidebar-section p-1 p-md-3"></div>;
+    return (
+      <div class="sidebar-section p-1 p-md-3">
+        <ProfileSection profile={this.props.data} />
+        <EducationSection education={this.props.data.education} />
+        <ContactSection contact={this.props.data.contact} />
+        <ExpertiseSection expertise={this.props.data.expertise} />
+        <HobbySection hobby={this.props.data.hobby} />
+        <SocialSection social={this.props.data.social} />
+      </div>
+    );
   }
 }
 
+//#region ROOT
 class CvHeader extends React.Component {
   constructor(props) {
     super(props);
@@ -189,9 +397,9 @@ class CvHeader extends React.Component {
     return (
       <div
         id="CvHeader"
-        className="d-flex justify-content-between header pt-4 flex-wrap flex-sm-nowrap"
+        className="d-flex justify-content-between header flex-wrap flex-sm-nowrap mb-3"
       >
-        <div className="header-1 px-3 pe-0 w-100">
+        <div className="header-1 px-3 pe-0">
           <h1 id="name-heading" className="my-3">
             {this.props.name}
           </h1>
@@ -199,12 +407,14 @@ class CvHeader extends React.Component {
             {this.props.level + " " + this.props.place}
           </h3>
         </div>
-        <div id="header-image" className="d-flex w-100 justify-content-center">
-          <img
-            id="header-image"
-            src="../src/img/header-img.svg"
-            alt="header-image"
-          />
+        <div
+          id="header-icons"
+          className="d-flex flex-wrap justify-content-center align-items-center"
+        >
+          <i id="header-icon" className="fas fa-code"></i>
+          <i id="header-icon" className="fas fa-code"></i>
+          <i id="header-icon" className="fas fa-code"></i>
+          <i id="header-icon" className="fas fa-code"></i>
         </div>
       </div>
     );
@@ -220,18 +430,14 @@ class CvBody extends React.Component {
     return (
       <div id="CvBody" className="d-flex flex-wrap flex-md-nowrap">
         <ContentSection content={this.props.data.content} />
-        <SidebarSection />
+        <SidebarSection data={this.props.data} />
       </div>
     );
   }
 }
+//#endregion
 
-class CvFooter extends React.Component {
-  render() {
-    return <div class="d-block footer bg-dark"></div>;
-  }
-}
-
+//#region APP
 class App extends React.Component {
   constructor() {
     super();
@@ -240,17 +446,17 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="container my-5">
+      <div id="App" className="container p-5 my-0 my-sm-5">
         <CvHeader
           name={this.state.data.name}
           level={this.state.data.level}
           place={this.state.data.place}
         />
         <CvBody data={this.state.data} />
-        <CvFooter />
       </div>
     );
   }
 }
+//#endregion
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
