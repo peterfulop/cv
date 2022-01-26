@@ -179,7 +179,7 @@ class ProfileSection extends React.Component {
     super(props);
   }
   render() {
-    const path = `../src/img/${this.props.profile.avatar}`;
+    const path = `./src/img/${this.props.profile.avatar}`;
     return (
       <div className="sidebar mx-2">
         <div className="avatar-box d-flex justify-content-center">

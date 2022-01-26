@@ -24,15 +24,7 @@ const data = {
   },
   expertise: {
     title: "Expertise",
-    expertises: [
-      "mySQL",
-      "C#",
-      "Javscript",
-      "Agilite",
-      "NodeJS",
-      "React",
-      "TeamWork",
-    ],
+    expertises: ["mySQL", "C#", "Javscript", "NodeJS", "React", "TeamWork"],
   },
   hobby: {
     title: "Hobbies",
