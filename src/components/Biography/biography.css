@@ -1,0 +1,13 @@
+.biography__body_content {
+  padding: 2rem;
+  background-color: var(--my-light-gray);
+}
+
+.biography__body_sidebar {
+  padding: 1rem;
+  background-color: var(--my-gray);
+}
+
+.content-text {
+  text-align: justify;
+}

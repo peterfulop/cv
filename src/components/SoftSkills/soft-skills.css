@@ -1,0 +1,19 @@
+.softskill__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.softskill_bubble {
+  text-align: center;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 1rem;
+  background-color: white;
+  border: 1px solid cadetblue;
+  color: cadetblue;
+}
+
+.softskill_bubble:hover {
+  background-color: cadetblue;
+  color: white;
+}

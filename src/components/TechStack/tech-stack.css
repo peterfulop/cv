@@ -1,0 +1,16 @@
+.tech-stack__list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tech_stack__bubble {
+  text-align: center;
+  color: white;
+  padding: 0.25rem 0.5rem;
+  font-size: 2rem;
+}
+
+.tech_stack__bubble:hover {
+  color: var(--my-orange);
+}

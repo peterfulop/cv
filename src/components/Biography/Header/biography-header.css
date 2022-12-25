@@ -1,0 +1,53 @@
+.biography__header {
+  display: flex;
+  justify-content: space-between;
+  background: #ffffff34;
+  background-position: inherit;
+}
+
+.biography__header_personal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2rem;
+  color: white;
+}
+
+.biography__header_personal h1 {
+  font-family: "Playfair Display", serif;
+  text-transform: uppercase;
+}
+
+.biography__header_avatar {
+  margin-right: 2rem;
+  padding: 0.5rem;
+}
+
+#avatar-img {
+  width: 150px;
+  height: 150px;
+  margin: 1rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 0.25rem solid white;
+}
+
+.biography__language_switcher{
+  display: flex;
+  align-items: center;
+}
+
+.language_switcher_checked{
+  color: rgb(255, 255, 255)
+}
+
+.language_switcher_unchecked{
+  color: rgb(164, 164, 164)
+}
+
+@media (max-width: 450px) {
+  #avatar-img {
+    width: 100px;
+    height: 100px;
+  }
+}
