@@ -41,7 +41,6 @@ export type Exprerience = {
   position: DictContent;
   title: DictContent;
   company: DictContent;
-  institute: DictContent;
   location: string;
   from: number;
   to: number | string;
@@ -99,8 +98,7 @@ export type Biography = {
   achivements: { data: Achievement[]; title: DictContent };
   languages: { data: LanguageSkills[]; title: DictContent };
   softSkills: { data: DictContent[]; title: DictContent };
-  techStack: IconNames[];
-  defaultLanguage: true;
+  defaultLanguage: boolean;
   projects: Project[];
   motivation: string;
   hobbies: Hobby[];

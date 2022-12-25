@@ -28,9 +28,8 @@ export default function ExperienceItem(props: {
             : ''}
         </h5>
         <p className='item-text__small mb-3'>
-          {experience.company[languageKey]} |{' '}
-          {experience.institute[languageKey]} |{experience.location}-{' '}
-          {experience.from}-{props.experience.to}
+          {experience.company[languageKey]} | {experience.from}-
+          {props.experience.to}
         </p>
         <p>{experience.text[languageKey]}</p>
       </div>

@@ -1,4 +1,5 @@
 import { Switch } from '@mui/material';
+import { Language } from '../../../utils/cv.interface';
 import './biography-header.css';
 
 export default function BiographyHeader(props: {
@@ -21,9 +22,9 @@ export default function BiographyHeader(props: {
                 : 'language_switcher_unchecked'
             }
           >
-            HU
+            {Language.HU}
           </p>
-          <Switch onChange={(_) => props.setDefaultLanguage} />
+          <Switch onChange={(_) => props.setDefaultLanguage((prev) => !prev)} />
           <p
             className={
               props.language
@@ -31,7 +32,7 @@ export default function BiographyHeader(props: {
                 : 'language_switcher_checked'
             }
           >
-            EN
+            {Language.EN}
           </p>
         </div>
       </div>

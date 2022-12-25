@@ -10,7 +10,7 @@ export const bioData: Biography = {
     data: {
       name: {
         HU: 'Fülöp Péter',
-        EN: 'Peter Fulop',
+        EN: 'Péter Fülöp',
       },
       level: {
         HU: 'junior',
@@ -25,8 +25,8 @@ export const bioData: Biography = {
       city: 'Körmend',
       avatar: 'avatar.png',
       about: {
-        HU: 'Fülöp Péter vagyok,  $age$ éves, és Vas megyében, Körmenden lakom. Alapvetően műszaki beállítottságú vagyok, tanulmányaimat is ez irányban végeztem, mint gépésztechnikus, CNC forgácsoló, és műszaki rajzoló. Ezek mellett évek óta, vállalkozás formájában fotográfusként dolgozom. A programozás iránti aktív érdeklődésem nagyjából az első munkahelyemmel együtt érkezett. Számtalan helyzetben próbáltam az adott munkafolyamatokon könnyíteni, egyszerűbbé, transzparensebbé tenni. Az egyszerű Excel makróktól kezdve végül hamar eljutottam a VBA szintre, ahol alapvetően a Visual Basic, egy Office alkalmazásokra testreszabott nyelv formájában volt elérhető. Az autodidakta módon történő tanulás a sajátos hiányosságaival lassan kezdte kinőni magát, így 2020-ban jelentkeztem egy szoftverfejlesztő OKJ képzésre, hogy az alapok meglegyenek. A képzés végére nagyjából sikerült irányt találni a szoftverfejlesztő pályán. Jelenleg a webfejlesztés érdekel a legjobban, és próbálok szorosabb kapcsolatot építeni a JavaScripttel.',
-        EN: 'hello',
+        HU: 'Fülöp Péter vagyok, $age$ éves. Vas megyében, egy Körmend nevű kisvárosban lakom. Van tapasztalatom mint gépésztechnikus, CAD-tervező, fotós, és szoftverfejlesztő. Mindig is érdekelt az automatizálás, a programozás és a dolgok egyszerűsítése. Korábbi munkáim során lehetőségem nyílt a folyamatok egyszerűsítésére kisebb automatizálások bevezetésével. Kezdetben excel makrókat használtam, később elkezdtem tanulni a VBA-ról és a userForms-ról. Létrehoztam ár- és ajánlatkalkulátorokat, készletkezelő alkalmazást, vágásoptimalizáló alkalmazást, illetve komplex vállalat rendszeren is dolgoztam, a cég projektjeinek lebonyolítására, megrendelések, ügyfelek, partnerek, szállítmányozás kezelésére. Később önállóan kezdtem el tanulni a webfejlesztést és a programozás alapjait, majd egy 2 éves suli után szoftverfejlesztőként végeztem.',
+        EN: 'My name is Péter Fülöp, I am $age$ years old. I live in a small town, named Körmend, in Vas county. I have working experiences as a mechanical technician, CAD-designer, and photographer as well. I have always been interested in automatization, programming, and simplifying things. During my previous jobs, I had the opportunity to simplify processes by introducing small automations. Initially, I used excel macros, later I started to learn about VBA and userForms. I created price and offer calculators, inventory management application, cutting optimizer app, respectively I was working on a complex company management system as well, for handle the projects of the company, for manage the orders, clients, partners, and deliveries. Later, I started learning web development and the basics of programming on my own, and after 2 years of school, I graduated as a software developer.',
       },
     },
   },
@@ -35,44 +35,54 @@ export const bioData: Biography = {
     data: [
       {
         school: { HU: 'UDEMY', EN: 'UDEMY' },
-        technical: { HU: 'Önfejlesztő kurzusok', EN: '' },
+        technical: {
+          HU: 'Önfejlesztő kurzusok',
+          EN: 'Self-development courses',
+        },
         text: {
-          HU: 'Programozás témakörben számtalan kurzus: NodeJS, MongoDB, TypeScipt, React, JavaScript alapok, C# LINQ, MySQL...',
-          EN: '',
+          HU: 'NodeJS, MongoDB, GraphQL, TypeScipt, React, JavaScript, C# LINQ, MySQL...',
+          EN: 'NodeJS, MongoDB, GraphQL, TypeScipt, React, JavaScript, C# LINQ, MySQL...',
         },
       },
       {
-        school: { HU: 'Vas Megyei SZC Rázsó Imre Technikum', EN: '' },
-        technical: { HU: 'Szoftverfejlesztő - 2020-2022', EN: '' },
+        school: {
+          HU: 'Vas Megyei SZC Rázsó Imre Technikum',
+          EN: 'Vas Megyei SZC Rázsó Imre Vocational School',
+        },
+        technical: {
+          HU: 'Szoftverfejlesztő - 2020-2022',
+          EN: 'Software developer - 2020-2022',
+        },
         text: {
-          HU: 'A képzésen a fő programozási nyelv a C# volt, erre építettünk először konzolos alkalmazásokat, majd WPF segítségével grafikus UI. Adatbázis szintEN: MySQL, MSSQL, C# alatt EntityFramework. Webfejlesztés témában Js, és PHP.',
-          EN: '',
+          HU: 'Fő programozási nyelvként C#-ot tanultunk. Készítettünk néhány konzolalkalmazást, tanultunk a WPF-ről és egyszerű grafikus alkalmazásokat fejlesztettünk. Ezen kívül megismerkedtünk a különböző adatbázisokkal, mint például az MSSQL, MySQL, és kicsit elmélyültünk a webfejlesztésben JavaScript és PHP segítségével.',
+          EN: 'We learned C# as our main programming language. We made some console applications, learned about WPF and developed simple graphical applications. In addition, we learned about different databases, such as MSSQL, MySQL, and we delved a bit into web development using JavaScript and PHP.',
         },
       },
       {
         school: {
           HU: 'Gépipari Informatikai és Műszaki Szakközépiskola',
-          EN: '',
+          EN: 'Mechanical Industry and IT Technical Vocational School',
         },
         technical: {
-          HU: 'Gépésztechnikus / CNC forgácsoló - 2012-2014',
-          EN: '',
+          HU: 'Gépésztechnikus / CAD-tervező / CNC forgácsoló - 2012-2014',
+          EN: 'Mechanical technician / CAD-designer / CNC cutter - 2012-2014',
         },
         text: {
-          HU: 'Érettségi után 2 év technikum. Gépésztechnikus alapok, műszaki rajzolás, CAD, CNC és hagyományos anyagmegmunkálási technikák',
-          EN: '',
+          HU: 'Érettségi után 2 év technikum. Gépésztechnikus alapok, műszaki rajzolás, CAD, CNC és hagyományos anyagmegmunkálási technikák.',
+          EN: '2 years of technical school after graduation. Mechanical engineering basics, technical drawing, CAD, CNC and traditional material processing techniques.',
         },
-      },
-      {
-        school: { HU: 'Kölcsey Ferenc Gimnázium', EN: '' },
-        technical: { HU: 'Érettségi 2008-2014', EN: '' },
-        text: { HU: '', EN: '' },
       },
     ],
   },
   expertise: {
     title: { HU: 'Erősségek', EN: 'Expertise' },
-    data: ['JavaScript', 'Bootstrap', 'Express', 'NodeJS', 'OOP', 'GIT'],
+    data: [
+      'Backend heavy full-stack development',
+      'React',
+      'GraphQL',
+      'NodeJS',
+      'Typescript',
+    ],
   },
   hobbies: [
     {
@@ -226,7 +236,7 @@ export const bioData: Biography = {
   },
   softSkills: {
     title: {
-      HU: '',
+      HU: 'Soft skillek',
       EN: 'Soft skills',
     },
     data: [
@@ -245,70 +255,80 @@ export const bioData: Biography = {
     data: [
       {
         position: {
-          HU: 'Junior szoftver fejlesztő',
-          EN: 'Junior Software Developer',
+          HU: 'Szoftverfejlesztő',
+          EN: 'Software Developer',
         },
-        title: { HU: '', EN: '' },
+        title: {
+          HU: 'Junior fullstack webfejlesztő',
+          EN: 'Junior fullstack web developer',
+        },
         company: { HU: 'Coding Sans', EN: 'Coding Sans' },
-        institute: { HU: 'Hungary', EN: '' },
         location: 'Budapest',
         from: 2022,
         to: 2023,
         text: {
-          HU: '',
-          EN: '',
+          HU: 'Belső aukciós szoftver és online árverés platform fejlesztésében való részvétel. Agilis fejlesztés csapatban, Jira ticket management. Felhasznált technológiák: Node.js, NextJS, PostgreSQL, Apollo & GraphQL, RabbitMQ, Redis.',
+          EN: 'Participation in the development of internal auction software and online auction platform. Agile development in a team, Jira ticket management. Used technologies: Node.js, NextJS, PostgreSQL, Apollo & GraphQL, RabbitMQ, Redis.',
         },
       },
       {
-        position: { HU: 'Fotográfus', EN: '' },
+        position: { HU: 'Fotográfus', EN: 'Photographer' },
         title: { HU: '', EN: '' },
-        company: { HU: 'Egyéni vállalkozás', EN: '' },
-        institute: { HU: '-', EN: '' },
-        location: 'Körmend',
+        company: { HU: 'Egyéni vállalkozás', EN: 'Self-employed' },
+        location: '',
         from: 2020,
-        to: '',
+        to: 2022,
         text: {
-          HU: '2017 óta dolgozom fotográfusként, mint vállalkozó. Hobbiból lett szenvedély, majd hivatás. Elsősorban családi eseményeket, portrékat, esküvőket dokumentálok. A 2020-as évtől főállásban vállalkozó, ami fő megélhetési forrás.',
-          EN: '',
+          HU: 'Főállásban egyéni vállalkozó fotós.',
+          EN: 'Full-time self-employed photographer.',
         },
       },
       {
-        position: { HU: 'Műszaki rajzoló', EN: '' },
-        title: { HU: 'Tervező', EN: '' },
-        company: { HU: 'Breitenbach Kft.', EN: '' },
-        institute: { HU: 'Magyarország', EN: '' },
+        position: { HU: 'CAD rajzoló', EN: 'CAD designer' },
+        title: { HU: '', EN: '' },
+        company: {
+          HU: 'Breitenbach Kft.',
+          EN: 'Breitenbach Kft.',
+        },
         location: 'Körmend',
         from: 2017,
         to: 2020,
         text: {
           HU: 'Főbb feladataim közé tartozott acélszerkezetek, lépcsők, csarnokok tervezésében való aktív részvétel, tervek gyártásra történő előkészítése, anyagrendelés, munka optimalizálás. Önszorgalomból kisebb, informatikai jellegű problémák feltárása, megoldása, folyamat automatizálás.',
-          EN: '',
+          EN: 'My main tasks included active participation in the design of steel structures, stairs, and halls, preparation of production plans, material ordering, work optimization. Exploration and solution of minor IT-related problems, process automation.',
         },
       },
       {
-        position: { HU: 'KVP Team', EN: '' },
-        title: { HU: 'Folyamatfejlesztés, optimalizálás', EN: '' },
-        company: { HU: 'Ada Hungária Bútorgyár Kft.', EN: '' },
-        institute: { HU: 'Magyarország', EN: '' },
+        position: { HU: 'KVP Team', EN: 'KVP Team' },
+        title: {
+          HU: 'Folyamatfejlesztés, optimalizálás',
+          EN: 'Process development, optimization',
+        },
+        company: {
+          HU: 'Ada Hungária Bútorgyár Kft.',
+          EN: 'ADA Hungária Kft. Furniture Industry',
+        },
         location: 'Körmend',
         from: 2017,
         to: 2016,
         text: {
-          HU: 'Termelési folyamatok segítése, gyorsítása, folyamatleírások készítése, anyag kihozatali tényezők felülvizsgálata, javítása, munkakörnyezet optimalizálása.',
-          EN: '',
+          HU: 'Termelési folyamatok segítése, gyorsítása, folyamatleírások készítése, anyag  kihozatali tényezők felülvizsgálata, javítása, munkakörnyezet optimalizálása.',
+          EN: 'Assisting and speeding up production processes, creating process descriptions, reviewing and improving material emission factors, optimizing the work environment.',
         },
       },
       {
-        position: { HU: 'Műszaki rajzoló', EN: '' },
-        title: { HU: 'CAD tervező', EN: '' },
-        company: { HU: 'Ada Hungária Bútorgyár Kft.', EN: '' },
-        institute: { HU: 'Magyarország', EN: '' },
+        position: { HU: 'CAD rajzoló', EN: 'CAD designer' },
+        title: { HU: '', EN: '' },
+        company: {
+          HU: 'Ada Hungária Bútorgyár Kft.',
+          EN: 'ADA Hungária Kft. Furniture Industry',
+        },
         location: 'Körmend',
         from: 2017,
         to: 2014,
         text: {
           HU: 'Műszaki rajzok készítése a termelés számára. 3D összeállítások készítése az egyes bútorokról, amik az összeszerelést, illetve a 	tervezést segítették.',
-          EN: '',
+          EN: 'Preparation of technical drawings for production. Making 3D assemblies of the individual pieces of furniture, which helped with assembly and planning.',
         },
       },
     ],
@@ -321,22 +341,36 @@ export const bioData: Biography = {
     data: [
       {
         award: {
-          HU: 'Project Manager',
-          EN: 'Project Manager',
+          HU: 'Belső aukciós alkalmazás - Tömeges tétel importálás',
+          EN: 'Internal Auction Application - Bulk item upload',
+        },
+        company: 'Coding Sans',
+        institute: '',
+        location: 'Körmend',
+        year: 2020,
+        text: {
+          HU: 'Tömeges tétel importálás funkció excel fileból. A felhasználónak lehetősége volt előre meghatározott séma alapján excel file-ból (.xls, .xlsx, .ods) adatokat importálni az adatbázisba. Az excel fileok feltöltést megelelőzően tárolásra kerültek egy AWS Bucketben, ahonnan a beolvasás történt. 4 lépcsős validációs protokoll előzte meg a feldolgozást, ahol egy szervíz vizsgálta a feltöltött file-t formailag, illetve tartalmailag. Ellenőrzésre kerültek az oszlop nevek, az oszlopokhoz tartózó adatok, melyeknek az adatbázisban meghatározott formai követelményeknek kellett megfelelniük. Vizsgálta szükséges esetben a duplikációkat, illetve minden, adatbázisra hivatkozó adat létezése ellenőrzésre került. A hibák logolására soronként is volt lehetőség, így a felhasználó pontosan láthatta, hogy a feltöltött excel táblázat hányadik sorában mi volt a hiba. A felhasználónak lehetősége volt üres template-et generáltatni a sablon alapján, aminek fejlécei megfeleltek a formai követelményeknek.',
+          EN: 'Bulk item import function from excel file. The user had the opportunity to import data from an excel file (.xls, .xlsx, .ods) into the database based on a predefined schema. Before uploading, the excel files were stored in an AWS Bucket, from which they were scanned. The processing was preceded by a 4-step validation protocol, where a service examined the uploaded file in terms of form and content. The column names and the data associated with the columns were checked, which had to meet the formal requirements defined in the database. If necessary, it examined duplications, and the existence of all data referring to the database was verified. It was also possible to log the errors per line, so the user could see exactly how many rows of the uploaded excel table contained the error. The user had the opportunity to generate an empty template based on the schema, the headers of which met the formal requirements.',
+        },
+      },
+      {
+        award: {
+          HU: 'Project Manager program',
+          EN: 'Project Manager App',
         },
         company: 'Breitenbach Kft.',
         institute: '',
         location: 'Körmend',
         year: 2020,
         text: {
-          HU: 'Komplett, 4 belső céget magába foglaló globális rendszer építése volt a cél. Az összes futó projekt vezetése, megrendelések kezelése, partnercégek, dolgozók nyilvántartása mind egy alkalmazásban. Lehetőségünk volt cégenként projektek szűrésére, kezelésére, megrendelések rögzítésére. A rendszeres megrendeléseket el tudtuk készíteni korábbiak alapján, a cégre jellemző megrendelőformula automatikus generálásra történt word, és PDF formátumban, majd egyből, Outlook kapcsolattal új emailként elküldhettük a beszállító partner felé, csatolva a PDF megrendelést. A megoldás Excelben, VBA implementálással készült, formok segítségével, részlegenkéti testreszabható szerepkörökkel.',
-          EN: '',
+          HU: 'Komplex, mini vállalat irányíti belső rendszer, a futó projektek vezetésére, megrendelések kezelésére, partnercégek és dolgozók adatainak nyilvántartására, kiszállítások szervezésére, részlegenkéti testreszabható szerepkörökkel. Automatikus megrendelő PDF-ek generálása, és email küldése. Megvalósítás Excel VBA-ban, UserForm UI grafikus felülettel.',
+          EN: 'A complex, company-managed internal system for managing running projects, orders, registering partner companies and employees data, organizing deliveries, with customizable roles for each department. Automatic generation of order PDFs and sending of emails. Implemented in Excel VBA and Userform UI.',
         },
       },
       {
         award: {
           HU: 'CutPro, szálanyag kalkulációs program',
-          EN: 'CutPro, szálanyag kalkulációs program',
+          EN: 'CutPro, cutting optimizer app',
         },
         company: 'Breitenbach Kft.',
         institute: '',
@@ -344,13 +378,13 @@ export const bioData: Biography = {
         year: 2019,
         text: {
           HU: 'Az acélgyártás anyagigény felmérésére készült megoldás, mely az ismert anyaghosszok, és keresztmetszetek alapján kalkulált várható anyagigényt a rendeléshez, illetve a gyártás számára vágási listát exportált PDF formátumban. Lehetőségünk volt megadni a szálankénti minimális maradékot, a vágási lapvastagságot. Az adatokat a program excel formátumból importálta, és béta verzióban képes volt meglévő raktárkészlet anyagaiból is kalkulálni. A megoldás Excelben, VBA implementálással készült, formok segítségével.',
-          EN: '',
+          EN: 'A solution for assessing the material requirements of steel production, which calculated the expected material requirements for the order based on the known material lengths and cross-sections, and exported a cutting list for the production in PDF format. We had the opportunity to specify the minimum residue per thread, the cutting sheet thickness. The data was imported from the program in excel format, and in the beta version it was also able to calculate from existing stock. Implemented in Excel VBA and Userform UI.',
         },
       },
       {
         award: {
-          HU: 'Lagerbestand Program',
-          EN: 'Lagerbestand Program',
+          HU: 'Raktárkészlet program',
+          EN: 'Warehouse stock app',
         },
         company: 'Breitenbach Kft.',
         institute: '',
@@ -358,7 +392,7 @@ export const bioData: Biography = {
         year: 2018,
         text: {
           HU: 'Egyszerű raktárkészlet nyilvántartó program készítése volt a cél, ami lehetővé teszi a beérkező termékek (kötőelemek, pántok, faanyagok) leltározását. Kritikusan alacsony raktárkészlet esetén figyelmeztette a használót, hogy melyik termékekből szükséges rendelést leadni. A raktárból történő kivételezés is nyomon követésre került: ki, mikor, mit, és milyen projektszámra vitte ki az adott termékeket. Lehetőség volt összegző kimutatás készítésére, PDF generálással. A megoldás Excelben, VBA implementálással készült, formok segítségével.',
-          EN: '',
+          EN: 'The goal was to create a simple stock register program, which enables the inventory of incoming products (fasteners, straps, wood materials). In case of critically low inventory, it warned the user which products needed to be ordered. The removal from the warehouse was also tracked: who, when, what, and for which project number the given products were removed. It was possible to create a summary statement, with PDF generation. Implemented in Excel VBA and Userform UI.',
         },
       },
       {
@@ -372,7 +406,7 @@ export const bioData: Biography = {
         year: 2017,
         text: {
           HU: 'A bútorgyártásban, szivacsfeldolgozás területén történő, nagymértékű anyagkihozatal javítás. A lényege, hogy a napi gyártásból megmaradt többlettermékeket leltárba véve, a következő gyártási listából kivételre kerültek a már leltározott tételek. A gyártási lista .csv állományban érkezett adatbázisból, ami az aktuális leltárkészlettel történő összefésül után egy új, módosított listát küldött a szivacsvágó gépnek. A megoldás Excelben, VBA implementálással készült.',
-          EN: '',
+          EN: 'The development of large-scale material extraction in the field of furniture production and sponge processing. The point is that by taking into inventory the surplus products left over from the daily production, the already inventoried items were removed from the next production list. The production list came in a .csv file from the database, which, after combing with the current inventory, sent a new, modified list to the sponge cutting machine. Implemented in Excel VBA and Userform UI.',
         },
       },
     ],
@@ -382,7 +416,7 @@ export const bioData: Biography = {
     data: [
       {
         language: { HU: 'angol', EN: 'english' },
-        level: { HU: 'Alapszintű nyelvismeret', EN: '' },
+        level: { HU: 'Alapszintű nyelvismeret', EN: 'Basic language skills' },
         exam: { HU: '-', EN: '-' },
         force: 3,
         write: 60,
@@ -391,8 +425,11 @@ export const bioData: Biography = {
       },
       {
         language: { HU: 'német', EN: 'German' },
-        level: { HU: 'Alapfokú, C-típusú nyelvvizsga', EN: '...' },
-        exam: { HU: 'alapfokú C', EN: '-' },
+        level: {
+          HU: 'Alapfokú, C-típusú nyelvvizsga',
+          EN: 'Basic, C-type language exam',
+        },
+        exam: { HU: 'alapfokú C', EN: 'elementary C' },
         force: 4,
         write: 70,
         read: 70,
@@ -400,34 +437,7 @@ export const bioData: Biography = {
       },
     ],
   },
-  motivation:
-    'Általános célom, hogy az élet minden területén biztos alapokra tudjak építkezni, amihez elengedhetetlen a kitartó és eredményes munka. Bár sok mindenre igaz, de a szoftverfejlesztésre kifejezettEN: egy életen át tartó tanulás az igazán gyümölcsöző karrier titka. Úgy gondolom, hogy kellő energia befektetéssel, és kitartó tanulással, alázattal bármi lehet az emberből, csak nem szabad szem elől veszíteni a célt. A karriercélom viszonylag triviális: kezdő, junior fejlesztőből szeretnék eljutni a lehető legmagasabb szintre, a lehető legtöbb tudás birtokában. ',
-  techStack: [
-    'SiMongodb',
-    'SiMysql',
-    'SiNextdotjs',
-    'SiReact',
-    'SiPhp',
-    'SiTypescript',
-    'SiJavascript',
-    'SiHtml5',
-    'SiBootstrap',
-    'SiCss3',
-    'SiExpress',
-    'SiCsharp',
-    'SiDotnet',
-    'SiGit',
-    'SiGithub',
-    'SiMaterialui',
-    'SiNodedotjs',
-    'SiFontawesome',
-    'SiGitlab',
-    'SiVisualstudiocode',
-    'SiPostman',
-    'SiXampp',
-    'SiGitkraken',
-    'SiSlack',
-  ],
+  motivation: '',
   projects: [
     {
       title: 'Jobify App',

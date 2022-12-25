@@ -1,9 +1,3 @@
-@media (max-width: 768px) {
-  .App {
-    padding: 2rem;
-  }
-}
-
 @media (max-width: 575px) {
   .App {
     border-radius: 0rem;

@@ -4,12 +4,11 @@ import { Language } from '../../../../utils/cv.interface';
 import AboutMe from '../../../About/about-me';
 import Achievements from '../../../Achievements/achievements';
 import Experience from '../../../Experience/experience';
-import Projects from '../../../Projects/projects';
 import Skills from '../../../Skills/skills';
 import SoftSkills from '../../../SoftSkills/soft-skills';
 
 export default function BiographyBodyContent(props: { languageKey: Language }) {
-  const { personals, skills, softSkills, projects, experience, achivements } =
+  const { personals, skills, softSkills, experience, achivements } =
     useContext(DataContext);
   const { languageKey } = props;
   return (
@@ -21,7 +20,6 @@ export default function BiographyBodyContent(props: { languageKey: Language }) {
       />
       <Skills {...props} skills={skills} />
       <SoftSkills {...props} softSkills={softSkills} />
-      <Projects projects={projects} />
       <Experience {...props} experience={experience} />
       <Achievements {...props} achivements={achivements} />
     </section>

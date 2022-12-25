@@ -16,7 +16,6 @@ const DataContext = createContext<Biography>({
   softSkills: defaultObject,
   social: [],
   hobbies: [],
-  techStack: [],
   projects: [],
   defaultLanguage: true,
   motivation: '',
