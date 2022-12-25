@@ -11,3 +11,7 @@
 .content-text {
   text-align: justify;
 }
+
+.biography__hidden_infos{
+  display: none;
+}

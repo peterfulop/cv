@@ -15,15 +15,17 @@ export default function Languages(props: {
   return (
     <div className='sidebar mx-2'>
       <SidebarHeader title={title[languageKey]} />
-      {data.map((language: LanguageSkills, i: number) => {
-        return (
-          <EducationItem
-            key={i}
-            language={language}
-            languageKey={languageKey}
-          />
-        );
-      })}
+      <div className='language__list'>
+        {data.map((language: LanguageSkills, i: number) => {
+          return (
+            <EducationItem
+              key={i}
+              language={language}
+              languageKey={languageKey}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

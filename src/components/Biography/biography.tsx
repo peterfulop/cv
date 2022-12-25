@@ -8,7 +8,7 @@ import BiographyHeader from './Header/biography-header';
 export default function Biography() {
   const [defaultLanguage, setDefaultLanguage] = useState<boolean>(true);
 
-  const { personals } = useContext(DataContext);
+  const { personals, contacts } = useContext(DataContext);
   const languageKey = defaultLanguage ? Language.HU : Language.EN;
 
   return (
@@ -17,6 +17,7 @@ export default function Biography() {
         name={personals?.data.name[languageKey]}
         level={personals?.data.level[languageKey]}
         position={personals?.data.position[languageKey]}
+        contacts={contacts?.data}
         language={defaultLanguage}
         setDefaultLanguage={setDefaultLanguage}
       />

@@ -9,3 +9,70 @@
     margin: 0;
   }
 }
+
+
+@media print {
+
+  *{
+    color: black !important;
+  }
+
+  .text-white{
+    color:black !important;
+  }
+
+  .biography__hidden_infos{
+    display: block !important;
+  }
+
+  body{
+    background: none;
+  }
+
+  .biography__language_switcher{
+    display: none;
+  }
+
+  .biography__body_content{
+    background-color: white;
+    border: none !important;
+  }
+
+  .biography__body_sidebar>div:nth-child(1) {
+    display: none;
+  }
+
+  .language__list {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .biography__body_sidebar>div:nth-child(5) {
+    display: none;
+  }
+
+  .biography__body_sidebar>div:nth-child(6) {
+    display: none;
+  }
+  
+  .biography__body_sidebar>div:nth-child(7) {
+    display: none;
+  }
+
+  .biography__body_sidebar{
+    background: none;
+  }
+
+  .skills_list, .experience_list, .biography__body_content{
+    break-after: always;
+  }
+
+  .skills_list .skill{
+    width: 50%;
+  }
+
+  .item-text__italic{
+    font-size: 12.5px;
+  }
+
+}

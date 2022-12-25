@@ -1,5 +1,5 @@
 import { Switch } from '@mui/material';
-import { Language } from '../../../utils/cv.interface';
+import { Contact, Language } from '../../../utils/cv.interface';
 import './biography-header.css';
 
 export default function BiographyHeader(props: {
@@ -7,6 +7,7 @@ export default function BiographyHeader(props: {
   name?: string;
   level?: string;
   position?: string;
+  contacts?: Contact[];
   setDefaultLanguage: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
   return (
@@ -14,6 +15,11 @@ export default function BiographyHeader(props: {
       <div className='biography__header_personal'>
         <h1>{props.name}</h1>
         <h3>{props.level + ' ' + props.position}</h3>
+        <div className='biography__hidden_infos'>
+          {props.contacts?.map((data, index) => {
+            return <p key={index}>{data.data}</p>;
+          })}
+        </div>
         <div className='biography__language_switcher'>
           <p
             className={
