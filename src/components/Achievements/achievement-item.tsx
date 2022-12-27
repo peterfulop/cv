@@ -16,8 +16,7 @@ export default function AchivementItem(props: {
             {props.achivement.award[languageKey]}
           </p>
           <p className='item-text__small'>
-            {props.achivement.company} | {props.achivement.institute} |
-            {props.achivement.location} - {props.achivement.year}
+            {props.achivement.company} | {props.achivement.location} - {props.achivement.year}
           </p>
         </div>
       </div>
