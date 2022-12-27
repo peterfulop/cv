@@ -20,7 +20,7 @@ export const bioData: Biography = {
         HU: 'fullstack szoftverfejlesztő',
         EN: 'fullstack software developer',
       },
-      birth: new Date('1993.08.17'),
+      birth: '17 Aug 1993 00:12:00 GMT',
       country: 'Hungary',
       city: 'Körmend',
       avatar: 'avatar.png',

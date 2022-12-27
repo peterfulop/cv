@@ -45,6 +45,12 @@
   color: rgb(164, 164, 164)
 }
 
+#pdf-logo{
+  width: 30px;
+  margin-left: -5px;
+  margin-top: 5px;
+}
+
 @media (max-width: 450px) {
   #avatar-img {
     width: 100px;

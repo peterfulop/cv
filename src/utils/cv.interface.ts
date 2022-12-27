@@ -60,7 +60,7 @@ export type Personal = {
   name: DictContent;
   level: DictContent;
   position: DictContent;
-  birth: Date;
+  birth: string;
   country: string;
   city: string;
   avatar: string;

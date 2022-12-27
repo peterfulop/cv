@@ -3,9 +3,10 @@ import ContentHeader from "../Biography/Body/Content/biography-body-content-head
 export default function AboutMe(props: {
   headerText: string;
   content?: string;
-  birthDate: number;
+  birthDate: string;
 }) {
-  const age = new Date(Date.now()).getFullYear() - props.birthDate;
+
+  const age = new Date(Date.now()).getFullYear() - new Date(props.birthDate).getFullYear();
   const contentWithAge = props.content?.replace("$age$", String(age));
 
   return (

@@ -11,12 +11,14 @@ export default function BiographyBodyContent(props: { languageKey: Language }) {
   const { personals, skills, softSkills, experience, achivements } =
     useContext(DataContext);
   const { languageKey } = props;
+
+  
   return (
     <section className='biography__body_content col-sm-12 col-md-12 col-lg-8'>
       <AboutMe
         headerText={personals.title[languageKey]}
         content={personals.data?.about[languageKey]}
-        birthDate={personals.data.birth.getFullYear()}
+        birthDate={personals.data.birth}
       />
       <Skills {...props} skills={skills} />
       <SoftSkills {...props} softSkills={softSkills} />
